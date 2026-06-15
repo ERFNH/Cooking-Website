@@ -1,4 +1,4 @@
-// ---------------- سرچ ----------------
+//  سرچ 
 const input = document.querySelector(".tex-input");
 const button = document.querySelector(".click-button");
 const posts = document.querySelectorAll(".blog-gridleft-item");
@@ -29,7 +29,7 @@ button.addEventListener("click", function (e) {
   });
 });
 
-// ---------------- pagination -----------------
+// pagination
 
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".nextpage-number");
