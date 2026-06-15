@@ -1,0 +1,148 @@
+.guid-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  gap: 3rem;
+}
+.guid-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.guid-header {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 100%;
+  letter-spacing: -4%;
+}
+.chefnameguid {
+  margin-right: 2rem;
+}
+.chefdateguid {
+  padding-left: 1rem;
+  border-left: 1px solid #0000001a;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+.guid-tex {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  width: 66.1875rem;
+  text-align: center;
+}
+.guid-img {
+  width: 80rem;
+  height: 37.5rem;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  object-fit: cover;
+}
+.question-section {
+  display: grid;
+  grid-template-columns: 65rem 8.5rem;
+  gap: 9rem;
+  margin-top: 4rem;
+}
+.question-left {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.margin-botton {
+  margin-bottom: 3rem;
+}
+.question-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: 12rem;
+}
+.question-item-header {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 100%;
+  letter-spacing: -4%;
+}
+.question-item-tex {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: #00000099;
+}
+.question-last-header {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  letter-spacing: -4%;
+  max-width: 52.2rem;
+  width: 100%;
+}
+.question-img {
+  width: 52.5rem;
+  height: 25rem;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+.question-bold-tex {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 2.25rem;
+  line-height: 4rem;
+  letter-spacing: -4%;
+  background: linear-gradient(to right, rgb(241, 241, 241), transparent);
+  padding: 3rem 3rem;
+  width: 57.5rem;
+  margin-left: 9rem;
+  border-top: 1px solid rgb(211, 210, 210);
+  border-bottom: 1px solid rgb(211, 210, 210);
+}
+.question-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+.question-right-header {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 100%;
+  letter-spacing: 10%;
+}
+
+/* استایل اسلایدار های افقی*/
+.suggestions-section {
+  position: relative;
+}
+
+.left-btn,
+.right-btn {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  background: none;
+
+  border: none;
+  cursor: pointer;
+}
+
+.left-btn {
+  left: -50px;
+}
+
+.right-btn {
+  right: -50px;
+}
+
+

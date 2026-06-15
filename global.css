@@ -1,0 +1,418 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  max-width: 90rem;
+  width: 100%;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("./assest/font/Inter_18pt-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assest/font/Inter_18pt-SemiBold.ttf") ("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assest/font/Inter_18pt-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assest/font/Inter_18pt-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+
+.header {
+  padding: 1.8rem 5rem;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 4rem;
+}
+.item a {
+  text-decoration: none;
+  color: black;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 100%;
+}
+.social-icon {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.blue-background-shadow {
+  background: linear-gradient(to top, #e7fafe, transparent);
+}
+.blue-background {
+  background-color: #e7fafe;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.chefinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.slider-left-chefinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.chefname {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 100%;
+}
+.chefdate {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 100%;
+}
+.chefavatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+.heart-icon-wrapper {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  border: none;
+}
+.heart-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.red-icon {
+  fill: #ff6363;
+}
+.gray-icon {
+  fill: #dbe2e5;
+}
+.text-color-white {
+  color: white;
+}
+.text-color-grey {
+  color: #00000099;
+}
+.recipes-item-info {
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+  gap: 1rem;
+}
+.fork {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 100%;
+}
+.time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 100%;
+}
+.black-icon {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.ads {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to top, #1d483b, #357355);
+  width: 25rem;
+  height: 27.1rem;
+  position: relative;
+}
+.ads-text {
+  width: 10.75rem;
+  margin-top: 2rem;
+  text-align: center;
+  z-index: 10;
+}
+.ads-img-wrapper {
+  position: relative;
+  width: 22.12rem;
+  height: 21rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  z-index: 10;
+}
+
+.sunburst-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.ads-link {
+  position: absolute;
+  margin-bottom: 2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 100%;
+  z-index: 20;
+  top: 85%;
+  left: 36%;
+}
+.insta-icon {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.inbox-section {
+  display: flex;
+  flex-direction: column;
+  margin: 8rem auto 8rem auto;
+  border-radius: 3.75rem;
+  position: relative;
+  overflow: hidden;
+  width: 80rem;
+  max-width: 80rem;
+  height: 28rem;
+  gap: 4rem;
+  align-items: center;
+}
+
+.inbox-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 5rem;
+  text-align: center;
+  width: 38.75rem;
+}
+.inbox-topheader {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.inbox-header {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 100%;
+  letter-spacing: -4%;
+}
+.inbox-tex {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  letter-spacing: 0%;
+}
+.input-container {
+  display: flex;
+  flex-direction: row;
+  gap: 8rem;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 5rem;
+  width: 30rem;
+  border-radius: 1.5rem;
+}
+.email-input {
+  border: none;
+}
+.click-button {
+  border: none;
+  width: 10rem;
+  height: 3.75rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.inbox-salad {
+  width: 26rem;
+  height: 27rem;
+  position: absolute;
+  left: -6.5rem;
+  bottom: -6rem;
+  transform: rotate(32deg);
+  z-index: 1;
+  object-fit: cover;
+}
+
+.racola-inbox {
+  width: 5rem;
+  height: 6rem;
+  position: absolute;
+  right: 17rem;
+  bottom: 6rem;
+  z-index: 1;
+  transform: rotate(-40deg);
+  object-fit: cover;
+}
+.cucumber-inbox {
+  width: 22rem;
+  height: 22rem;
+  position: absolute;
+  right: -7rem;
+  bottom: -7rem;
+  z-index: 1;
+  object-fit: cover;
+}
+.suggestions-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  width: 80rem;
+  margin: 7rem auto 7rem auto;
+}
+.suggestions-header {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 100%;
+  letter-spacing: -4%;
+}
+.suggestions-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.delisious-item {
+  position: relative;
+  width: 18.125rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.delisious-figure {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.delisious-figure img {
+  width: 18.125rem;
+  height: 12.5rem;
+  border-radius: 1.25rem;
+  object-fit: cover;
+}
+.delisious-figcaption {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.625;
+  letter-spacing: -4%;
+}
+.footer-wrapper {
+  padding: 1.8rem 5rem;
+}
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #eee;
+}
+.footer-main-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer-social {
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+}
+.footer-social-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 100%;
+  letter-spacing: -2%;
+}
+.Flowbase {
+  color: #00000099;
+}
+.Webflow {
+  color: rgb(252, 115, 115);
+}
+.footer-social-right {
+  margin-left: auto;
+}
+.footer-subtex {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+.border-left {
+  border-left: 1px solid #0000001a;
+}
+/*برای قسمت سرچ blog&artickle*/
+.hidden {
+  display: none;
+}
+
+
+
+
+
+
+

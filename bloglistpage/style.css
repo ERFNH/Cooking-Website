@@ -1,0 +1,205 @@
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 7rem;
+}
+
+.blog-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.blog-header {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 100%;
+  letter-spacing: -4%;
+}
+.blog-tex {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+.blog-search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 17rem;
+  border: 1px solid #0000001a;
+  height: 5rem;
+  border-radius: 1.5rem;
+  padding: 1rem 1rem 1rem 2rem;
+}
+.tex-input {
+  border: none;
+  height: 1rem;
+  width: 16.25rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 100%;
+  letter-spacing: -2%;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: 52.5rem 25rem;
+  gap: 2rem;
+}
+.blog-gridleft {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.blog-gridleft-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+.blog-gridleft-image {
+  width: 18.125rem;
+  height: 12.5rem;
+  border-radius: 1.25rem;
+  object-fit: cover;
+
+}
+.blog-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.blog-detailtop {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.blog-detail-header {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 100%;
+  letter-spacing: -4%;
+}
+.blog-detail-tex {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: #00000099;
+  width: 31rem;
+}
+.blog-detailbotton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+.blog-figure {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.blog-figureavatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+.blog-figcaption {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 100%;
+  letter-spacing: -2%;
+}
+.blogdate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 2.5rem;
+  border-left: 1px solid #0000001a;
+  padding-left: 2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 100%;
+  letter-spacing: -2%;
+  color: #00000099;
+}
+.nextpage-list {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.blog-gridright {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.blog-gridright-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.tastyrecipes-header {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 100%;
+  letter-spacing: -4%;
+}
+.tastyrecipes-item {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+.tastyrecipes-image {
+  width: 11.25rem;
+  height: 7.5rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  flex-shrink: 0;
+}
+.tastyrecipes-discription {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.discription-header {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  letter-spacing: -4%;
+}
+.tastyrecipes-tex {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: .875rem;
+  line-height: 100%;
+  letter-spacing: -2%;
+  color: #00000099;
+}
+.nextpage-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #0000001a;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.nextpage-number.page-active {
+  background-color: black;
+  color: white;          
+}
+
