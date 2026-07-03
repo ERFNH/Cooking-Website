@@ -3,8 +3,7 @@ const rightBtn = document.querySelector(".right-btn");
 const slider = document.querySelector(".suggestions-grid");
 const cardCount = slider.children.length;
 
-let currentPosition =
-  Number(localStorage.getItem("sliderPosition")) || 0;
+let currentPosition = Number(localStorage.getItem("sliderPosition")) || 0;
 
 for (let i = 0; i < currentPosition; i++) {
   slider.appendChild(slider.firstElementChild);
