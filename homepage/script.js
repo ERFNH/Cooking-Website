@@ -9,7 +9,7 @@ async function fetchCategories() {
   const container = document.getElementById("categories-container");
 
   try {
-    const response = await axios.get(BASE_URL + "/categories/"); // به جای تمپلیت لترال از + استفاده شده
+    const response = await axios.get(BASE_URL + "/categories/");
     const categories = response.data;
 
     container.innerHTML = "";
